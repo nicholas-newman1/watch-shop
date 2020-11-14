@@ -1,8 +1,6 @@
 @use 'config' as *;
 
-header {
-  background: $headerColor;
-  height: $headerHeight;
+@mixin bottom-border() {
   border-bottom: 5px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -11,11 +9,17 @@ header {
     $accent1,
     darken($accent1, 10)
   );
+}
+
+header {
+  background: $headerColor;
+  height: 100px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 100;
+  @include bottom-border();
 
   .container {
     display: flex;
@@ -74,12 +78,13 @@ header {
     .container {
       .nav {
         position: absolute;
-        top: $headerHeight;
         background: $headerColor;
         width: 100%;
         left: 0;
+        top: 100%;
         padding: 1rem 5%;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        @include bottom-border();
 
         .nav-list {
           flex-direction: column;
@@ -104,4 +109,9 @@ header {
       }
     }
   }
+}
+
+.header-shrink {
+  height: 50px;
+  transition: height 300ms;
 }
