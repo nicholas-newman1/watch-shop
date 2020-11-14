@@ -1,5 +1,6 @@
 @use './scss/config' as *;
 @use './scss/header';
+@use './scss/hero';
 
 *,
 *::before,
@@ -16,6 +17,10 @@ ul {
 a {
   text-decoration: none;
   display: inline-block;
+}
+
+main {
+  margin-top: $headerHeight;
 }
 
 .container {

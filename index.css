@@ -1,5 +1,5 @@
 header {
-  background: #111;
+  background: #0a0a0a;
   height: 100px;
   border-bottom: 5px solid;
   border-image-slice: 1;
@@ -7,6 +7,7 @@ header {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   position: fixed;
   width: 100%;
+  top: 0;
 }
 header .container {
   display: flex;
@@ -78,6 +79,51 @@ header .container .hamburger:hover {
   }
 }
 
+.hero {
+  background-image: url("./images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+.hero .container {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero .container .hero-heading {
+  color: white;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.hero .container .hero-text {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 1rem;
+}
+.hero .container .hero-btns {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1rem;
+}
+.hero .container .hero-btns .hero-btn {
+  background: none;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  transition: 300ms;
+}
+.hero .container .hero-btns .hero-btn:hover {
+  background: #d4af37;
+  color: black;
+}
+
 *,
 *::before,
 *::after {
@@ -93,6 +139,10 @@ ul {
 a {
   text-decoration: none;
   display: inline-block;
+}
+
+main {
+  margin-top: 100px;
 }
 
 .container {
