@@ -1,20 +1,3 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-
 header {
   background: #111;
   height: 100px;
@@ -93,6 +76,23 @@ header .container .hamburger:hover {
   header .container .hamburger {
     display: inline-block;
   }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
 }
 
 .container {
