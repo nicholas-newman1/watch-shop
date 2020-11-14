@@ -8,6 +8,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 100;
 }
 header .container {
   display: flex;
@@ -191,7 +192,7 @@ main {
 }
 
 section {
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 
 .container {
