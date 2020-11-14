@@ -2,6 +2,7 @@
 @use './scss/header';
 @use './scss/hero';
 @use './scss/about';
+@use './scss/contact';
 
 *,
 *::before,
@@ -45,6 +46,10 @@ section {
   margin-bottom: 2.5rem;
 }
 
+.sub-heading--light {
+  color: white;
+}
+
 .sub-heading::after {
   content: '';
   position: absolute;
@@ -54,4 +59,18 @@ section {
   height: 5px;
   width: 50%;
   background: $accent1;
+}
+
+.btn-accent-outline {
+  background: none;
+  border: 1px solid $accent1;
+  color: $accent1;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.btn-accent-outline:hover {
+  background: $accent1;
+  color: black;
 }

@@ -112,18 +112,6 @@ header .container .hamburger:hover {
   grid-template-columns: auto auto;
   column-gap: 1rem;
 }
-.hero .container .hero-btns .hero-btn {
-  background: none;
-  border: 1px solid #d4af37;
-  color: #d4af37;
-  padding: 0.75em 1.5em;
-  cursor: pointer;
-  transition: 300ms;
-}
-.hero .container .hero-btns .hero-btn:hover {
-  background: #d4af37;
-  color: black;
-}
 @media (max-width: 500px) {
   .hero .container .hero-heading {
     font-size: 4rem;
@@ -150,6 +138,35 @@ header .container .hamburger:hover {
   text-align: center;
   margin-bottom: 2rem;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.contact {
+  background: #0a0a0a;
+}
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contact .contact-form .contact-label {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.contact .contact-form .contact-label .contact-input,
+.contact .contact-form .contact-label .contact-textarea {
+  height: 2rem;
+  padding: 5px;
+  margin-top: 0.5rem;
+}
+.contact .contact-form .contact-label .contact-textarea {
+  resize: vertical;
+}
+.contact .contact-form .contact-submit {
+  align-self: center;
 }
 
 *,
@@ -194,6 +211,10 @@ section {
   margin-bottom: 2.5rem;
 }
 
+.sub-heading--light {
+  color: white;
+}
+
 .sub-heading::after {
   content: "";
   position: absolute;
@@ -203,4 +224,18 @@ section {
   height: 5px;
   width: 50%;
   background: #d4af37;
+}
+
+.btn-accent-outline {
+  background: none;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.btn-accent-outline:hover {
+  background: #d4af37;
+  color: black;
 }

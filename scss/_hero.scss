@@ -34,20 +34,6 @@
       display: grid;
       grid-template-columns: auto auto;
       column-gap: 1rem;
-
-      .hero-btn {
-        background: none;
-        border: 1px solid $accent1;
-        color: $accent1;
-        padding: 0.75em 1.5em;
-        cursor: pointer;
-        transition: 300ms;
-      }
-
-      .hero-btn:hover {
-        background: $accent1;
-        color: black;
-      }
     }
   }
 
