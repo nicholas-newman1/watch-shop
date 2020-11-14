@@ -3,6 +3,7 @@
 @use './scss/hero';
 @use './scss/about';
 @use './scss/contact';
+@use './scss/footer';
 
 *,
 *::before,
@@ -29,6 +30,18 @@ section {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: 300ms;
+}
+
+.logo:hover {
+  color: $accent1;
 }
 
 .sub-heading {

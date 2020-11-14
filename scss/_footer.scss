@@ -1,0 +1,66 @@
+@use 'config' as *;
+
+footer {
+  @include border('top');
+  background: $headerColor;
+  //display: flex;
+
+  .container {
+    display: flex;
+    padding: 5rem 0;
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40%;
+
+      .social-media {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        margin-top: 1rem;
+
+        .social-link {
+          svg {
+            width: 30px;
+            fill: white;
+          }
+        }
+      }
+    }
+
+    .footer-right {
+      width: 60%;
+      display: flex;
+      align-items: center;
+
+      .footer-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .footer-item {
+        }
+
+        .footer-link {
+          color: white;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .footer-bottom-bar {
+    background: #ddd;
+
+    a {
+      padding: 5px 0;
+      text-align: center;
+      color: black;
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+  }
+}

@@ -1,16 +1,5 @@
 @use 'config' as *;
 
-@mixin bottom-border() {
-  border-bottom: 5px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to left,
-    darken($accent1, 10),
-    $accent1,
-    darken($accent1, 10)
-  );
-}
-
 header {
   background: $headerColor;
   height: 100px;
@@ -19,25 +8,13 @@ header {
   width: 100%;
   top: 0;
   z-index: 100;
-  @include bottom-border();
+  @include border();
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-
-    .logo {
-      color: white;
-      text-transform: uppercase;
-      font-size: 2rem;
-      font-weight: 700;
-      transition: 300ms;
-    }
-
-    .logo:hover {
-      color: $accent1;
-    }
 
     .nav {
       .nav-list {
@@ -84,7 +61,7 @@ header {
         top: 100%;
         padding: 1rem 5%;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-        @include bottom-border();
+        @include border();
 
         .nav-list {
           flex-direction: column;

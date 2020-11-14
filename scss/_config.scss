@@ -1,3 +1,19 @@
 $accent1: #d4af37;
 $accent2: #ffd700;
 $headerColor: #0a0a0a;
+
+@mixin border($pos: 'bottom') {
+  @if ($pos == 'top') {
+    border-top: 5px solid;
+  } @else {
+    border-bottom: 5px solid;
+  }
+
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to left,
+    darken($accent1, 10),
+    $accent1,
+    darken($accent1, 10)
+  );
+}

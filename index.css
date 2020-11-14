@@ -16,16 +16,6 @@ header .container {
   align-items: center;
   height: 100%;
 }
-header .container .logo {
-  color: white;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 700;
-  transition: 300ms;
-}
-header .container .logo:hover {
-  color: #d4af37;
-}
 header .container .nav .nav-list {
   display: flex;
 }
@@ -178,6 +168,58 @@ header .container .hamburger:hover {
   align-self: center;
 }
 
+footer {
+  border-top: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #b29126, #d4af37, #b29126);
+  background: #0a0a0a;
+}
+footer .container {
+  display: flex;
+  padding: 5rem 0;
+}
+footer .container .footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+footer .container .footer-left .social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 1rem;
+}
+footer .container .footer-left .social-media .social-link svg {
+  width: 30px;
+  fill: white;
+}
+footer .container .footer-right {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+footer .container .footer-right .footer-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .footer-right .footer-list .footer-link {
+  color: white;
+  text-transform: uppercase;
+}
+footer .footer-bottom-bar {
+  background: #ddd;
+}
+footer .footer-bottom-bar a {
+  padding: 5px 0;
+  text-align: center;
+  color: black;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
 *,
 *::before,
 *::after {
@@ -203,6 +245,18 @@ section {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: 300ms;
+}
+
+.logo:hover {
+  color: #d4af37;
 }
 
 .sub-heading {
