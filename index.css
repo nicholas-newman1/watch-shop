@@ -105,6 +105,7 @@ header .container .hamburger:hover {
   text-transform: uppercase;
   letter-spacing: 10px;
   margin-bottom: 1rem;
+  line-height: 1.3rem;
 }
 .hero .container .hero-btns {
   display: grid;
@@ -122,6 +123,22 @@ header .container .hamburger:hover {
 .hero .container .hero-btns .hero-btn:hover {
   background: #d4af37;
   color: black;
+}
+@media (max-width: 500px) {
+  .hero .container .hero-heading {
+    font-size: 4rem;
+  }
+  .hero .container .hero-text {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 400px) {
+  .hero .container .hero-heading {
+    font-size: 3rem;
+  }
+  .hero .container .hero-text {
+    font-size: 0.8rem;
+  }
 }
 
 .about {

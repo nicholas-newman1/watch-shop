@@ -27,6 +27,7 @@
       text-transform: uppercase;
       letter-spacing: 10px;
       margin-bottom: 1rem;
+      line-height: 1.3rem;
     }
 
     .hero-btns {
@@ -46,6 +47,30 @@
       .hero-btn:hover {
         background: $accent1;
         color: black;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .container {
+      .hero-heading {
+        font-size: 4rem;
+      }
+
+      .hero-text {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .container {
+      .hero-heading {
+        font-size: 3rem;
+      }
+
+      .hero-text {
+        font-size: 0.8rem;
       }
     }
   }
