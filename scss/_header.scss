@@ -1,7 +1,7 @@
 @use 'config' as *;
 
 header {
-  background: #0a0a0a;
+  background: $headerColor;
   height: $headerHeight;
   border-bottom: 5px solid;
   border-image-slice: 1;
@@ -74,7 +74,7 @@ header {
       .nav {
         position: absolute;
         top: $headerHeight;
-        background: #111;
+        background: $headerColor;
         width: 100%;
         left: 0;
         padding: 1rem 5%;
