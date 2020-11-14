@@ -1,6 +1,7 @@
 @use './scss/config' as *;
 @use './scss/header';
 @use './scss/hero';
+@use './scss/about';
 
 *,
 *::before,
@@ -23,8 +24,34 @@ main {
   margin-top: $headerHeight;
 }
 
+section {
+  padding: 5rem 0;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.sub-heading {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 2.5rem;
+}
+
+.sub-heading::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 50%;
+  background: $accent1;
 }
