@@ -90,7 +90,7 @@
   background-size: cover;
   height: 100vh;
 }
-.hero .container {
+.hero__container {
   height: 100%;
   text-align: center;
   display: flex;
@@ -98,13 +98,13 @@
   align-items: center;
   justify-content: center;
 }
-.hero .container .hero-heading {
+.hero__heading {
   color: white;
   font-size: 5rem;
   font-size: clamp(2.5rem, 5vw, 4rem);
   margin-bottom: 1rem;
 }
-.hero .container .hero-text {
+.hero__text {
   color: white;
   font-size: clamp(0.9rem, 1.2vw, 1.1rem);
   text-transform: uppercase;
@@ -112,7 +112,7 @@
   margin-bottom: 1rem;
   line-height: 1.3rem;
 }
-.hero .container .hero-btns {
+.hero__btns {
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 1rem;
