@@ -34,7 +34,7 @@ section {
 
 .logo {
   color: white;
-  text-transform: uppercase;
+  @include uc();
   font-size: 2rem;
   font-weight: 700;
   transition: 300ms;
@@ -48,7 +48,7 @@ section {
   display: inline-block;
   font-size: 2rem;
   text-align: center;
-  text-transform: uppercase;
+  @include uc();
   position: relative;
   left: 50%;
   transform: translateX(-50%);
