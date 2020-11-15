@@ -8,7 +8,9 @@ header {
   width: 100%;
   top: 0;
   z-index: 100;
-  @include border();
+  border-bottom: 5px solid;
+  @include borderGradient();
+  transition: 300ms;
 
   .container {
     display: flex;
@@ -61,7 +63,8 @@ header {
         top: 100%;
         padding: 1rem 5%;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-        @include border();
+        border-bottom: 5px solid;
+        @include borderGradient();
 
         .nav-list {
           flex-direction: column;
@@ -90,5 +93,11 @@ header {
 
 .header-shrink {
   height: 50px;
-  transition: height 300ms;
+  border-bottom: 1px solid;
+
+  .container {
+    .nav {
+      border-bottom: 1px solid;
+    }
+  }
 }

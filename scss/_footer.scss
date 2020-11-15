@@ -1,9 +1,9 @@
 @use 'config' as *;
 
 footer {
-  @include border('top');
+  border-top: 1px solid;
+  @include borderGradient();
   background: $headerColor;
-  //display: flex;
 
   .container {
     display: flex;
