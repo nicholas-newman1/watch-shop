@@ -1,6 +1,6 @@
 @use 'config' as *;
 
-header {
+.header {
   background: $headerColor;
   height: 100px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
@@ -12,83 +12,114 @@ header {
   @include borderGradient();
   transition: 300ms;
 
-  .container {
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+  }
+}
 
-    .nav {
-      .nav-list {
-        display: flex;
-      }
+.nav {
+  position: absolute;
+  background: $headerColor;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  padding: 1rem 5%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-bottom: 5px solid;
+  display: none;
+  @include borderGradient();
 
-      .nav-link {
-        color: white;
-        padding: 0.5rem;
-        text-transform: uppercase;
-        font-size: 0.85rem;
-        transition: 300ms;
-      }
+  &__item + &__item {
+    margin-top: 1rem;
+  }
 
-      .nav-link:hover {
-        color: $accent1;
-      }
+  &__link {
+    color: white;
+    @include uc();
+    font-size: 0.85rem;
+    transition: 300ms;
+    padding: 0.5rem 0;
 
-      .nav-item + .nav-item {
-        margin-left: 1rem;
-      }
-    }
-
-    .hamburger {
-      width: 35px;
-      fill: white;
-      display: none;
-      cursor: pointer;
-      transition: 300ms;
-    }
-
-    .hamburger:hover {
-      fill: $accent1;
+    &:hover {
+      color: $accent1;
     }
   }
 
-  @media (max-width: 700px) {
-    .container {
-      .nav {
-        position: absolute;
-        background: $headerColor;
-        width: 100%;
-        left: 0;
-        top: 100%;
-        padding: 1rem 5%;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-        border-bottom: 5px solid;
-        @include borderGradient();
+  &--visible {
+    display: unset;
+  }
+}
 
-        .nav-list {
-          flex-direction: column;
-        }
+.hamburger {
+  width: 35px;
+  fill: white;
+  cursor: pointer;
+  transition: 300ms;
 
-        .nav-item + .nav-item {
-          margin-left: 0;
-          margin-top: 1rem;
-        }
+  &__hover {
+    fill: $accent1;
+  }
+}
 
-        .nav-link {
-          padding: 0.5rem 0;
-        }
-      }
+@include mq(700px) {
+  .nav {
+    all: unset;
 
-      .hidden {
-        display: none;
-      }
+    &__list {
+      display: flex;
+    }
 
-      .hamburger {
-        display: inline-block;
-      }
+    &__item + &__item {
+      margin-top: 0;
+      margin-left: 1rem;
     }
   }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+header {
+  // @media (max-width: 700px) {
+  //   .container {
+  //     .nav {
+  // position: absolute;
+  // background: $headerColor;
+  // width: 100%;
+  // left: 0;
+  // top: 100%;
+  // padding: 1rem 5%;
+  // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  // border-bottom: 5px solid;
+  // @include borderGradient();
+
+  //       .nav-list {
+  //         flex-direction: column;
+  //       }
+
+  //       .nav-item + .nav-item {
+  //         margin-left: 0;
+  //         margin-top: 1rem;
+  //       }
+
+  //       .nav-link {
+  //         padding: 0.5rem 0;
+  //       }
+  //     }
+
+  //     .hidden {
+  //       display: none;
+  //     }
+
+  //     .hamburger {
+  //       display: inline-block;
+  //     }
+  //   }
+  // }
 }
 
 .header-shrink {

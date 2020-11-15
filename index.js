@@ -2,9 +2,9 @@
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav');
 hamburger.addEventListener('click', () => {
-  nav.classList.contains('hidden')
-    ? nav.classList.remove('hidden')
-    : nav.classList.add('hidden');
+  nav.classList.contains('nav--visible')
+    ? nav.classList.remove('nav--visible')
+    : nav.classList.add('nav--visible');
 });
 
 // header shrink if not scrolled to the top
