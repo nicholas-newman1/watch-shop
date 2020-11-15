@@ -132,29 +132,28 @@
 .contact {
   background: #0a0a0a;
 }
-.contact .contact-form {
+.contact__form {
   display: flex;
   flex-direction: column;
   width: 90%;
   max-width: 500px;
   margin: 0 auto;
 }
-.contact .contact-form .contact-label {
+.contact__label {
   color: white;
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
 }
-.contact .contact-form .contact-label .contact-input,
-.contact .contact-form .contact-label .contact-textarea {
+.contact__input, .contact__textarea {
   height: 2rem;
   padding: 5px;
   margin-top: 0.5rem;
 }
-.contact .contact-form .contact-label .contact-textarea {
+.contact__textarea {
   resize: vertical;
 }
-.contact .contact-form .contact-submit {
+.contact__submit {
   align-self: center;
 }
 

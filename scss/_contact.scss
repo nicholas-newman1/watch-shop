@@ -3,33 +3,33 @@
 .contact {
   background: $headerColor;
 
-  .contact-form {
+  &__form {
     display: flex;
     flex-direction: column;
     width: 90%;
     max-width: 500px;
     margin: 0 auto;
+  }
 
-    .contact-label {
-      color: white;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 1rem;
+  &__label {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
 
-      .contact-input,
-      .contact-textarea {
-        height: 2rem;
-        padding: 5px;
-        margin-top: 0.5rem;
-      }
+  &__input,
+  &__textarea {
+    height: 2rem;
+    padding: 5px;
+    margin-top: 0.5rem;
+  }
 
-      .contact-textarea {
-        resize: vertical;
-      }
-    }
+  &__textarea {
+    resize: vertical;
+  }
 
-    .contact-submit {
-      align-self: center;
-    }
+  &__submit {
+    align-self: center;
   }
 }
