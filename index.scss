@@ -13,6 +13,15 @@
   box-sizing: border-box;
 }
 
+/* The following block keeps the footer at the bottom of the page when there is
+not enought content to push it to the bottom */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 ul {
   list-style: none;
 }
