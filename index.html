@@ -102,14 +102,14 @@
         </form>
       </section>
 
-      <footer>
-        <div class="container">
-          <div class="footer-left">
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__primary">
             <a class="logo" href="./">Watch Shop</a>
-            <div class="social-media">
-              <a href="" class="social-link">
+            <div class="social">
+              <a href="" class="social__link">
                 <svg
-                  class="facebook"
+                  class="social__svg"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
@@ -118,9 +118,9 @@
                   />
                 </svg>
               </a>
-              <a href="" class="social-link">
+              <a href="" class="social__link">
                 <svg
-                  class="twitter"
+                  class="social__svg"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
@@ -129,9 +129,9 @@
                   />
                 </svg>
               </a>
-              <a href="" class="social-link">
+              <a href="" class="social__link">
                 <svg
-                  class="instagram"
+                  class="social__svg"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
@@ -143,26 +143,30 @@
             </div>
           </div>
 
-          <nav class="footer-right">
-            <ul class="footer-list">
-              <li class="footer-item">
-                <a href="mens.html" class="footer-link">Mens</a>
-              </li>
-              <li class="footer-item">
-                <a href="womens.html" class="footer-link">Womens</a>
-              </li>
-              <li class="footer-item">
-                <a href="#about" class="footer-link">About</a>
-              </li>
-              <li class="footer-item">
-                <a href="#contact" class="footer-link">Contact</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="footer__secondary">
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="mens.html" class="footer__link">Mens</a>
+                </li>
+                <li class="footer__item">
+                  <a href="womens.html" class="footer__link">Womens</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#contact" class="footer__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
 
-        <div class="footer-bottom-bar">
-          <a href="nicknewman.ca">Website Developed by Nicholas Newman</a>
+        <div class="footer__bottom-bar">
+          <a class="footer__bottom-link" href="nicknewman.ca"
+            >Website Developed by Nicholas Newman</a
+          >
         </div>
       </footer>
     </main>

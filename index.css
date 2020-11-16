@@ -157,73 +157,44 @@
   align-self: center;
 }
 
-footer {
+.footer {
   border-top: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #b29126, #d4af37, #b29126);
   background: #0a0a0a;
 }
-footer .container {
-  display: flex;
+.footer__container {
   padding: 5rem 0;
 }
-footer .container .footer-left {
+.footer__primary {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
 }
-footer .container .footer-left .social-media {
-  display: flex;
-  margin-top: 1rem;
+.footer__secondary {
+  margin-top: 2rem;
+  text-align: center;
 }
-footer .container .footer-left .social-media .social-link svg {
-  width: 30px;
-  fill: white;
-}
-footer .container .footer-left .social-media .social-link + .social-link {
-  margin-left: 1rem;
-}
-footer .container .footer-right {
-  width: 60%;
+.footer__nav {
   display: flex;
   align-items: center;
+  height: 100%;
 }
-footer .container .footer-right .footer-list {
+.footer__list {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
-@media (max-width: 400px) {
-  footer .container .footer-right .footer-list {
-    flex-direction: column;
-    align-items: center;
-  }
-  footer .container .footer-right .footer-list .footer-item + .footer-item {
-    margin-top: 1rem;
-  }
+.footer__item + .footer__item {
+  margin-top: 1rem;
 }
-footer .container .footer-right .footer-list .footer-link {
+.footer__link {
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-@media (max-width: 700px) {
-  footer .container {
-    flex-direction: column;
-  }
-  footer .container .footer-left,
-footer .container .footer-right {
-    width: 100%;
-  }
-  footer .container .footer-right {
-    margin-top: 2rem;
-  }
-}
-footer .footer-bottom-bar {
+.footer__bottom-bar {
   background: #ddd;
 }
-footer .footer-bottom-bar a {
+.footer__bottom-link {
   padding: 5px 0;
   text-align: center;
   color: black;
@@ -231,6 +202,39 @@ footer .footer-bottom-bar a {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.8rem;
+}
+@media only screen and (min-width: 400px) {
+  .footer__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__item + .footer__item {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__primary {
+    width: 40%;
+  }
+  .footer__secondary {
+    width: 55%;
+  }
+}
+
+.social {
+  display: flex;
+  margin-top: 1rem;
+}
+.social__link + .social__link {
+  margin-left: 1rem;
+}
+.social__svg {
+  width: 30px;
+  fill: white;
 }
 
 *,
