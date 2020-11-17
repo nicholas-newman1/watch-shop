@@ -237,6 +237,10 @@
   fill: white;
 }
 
+.mens {
+  margin-top: 7rem;
+}
+
 *,
 *::before,
 *::after {
@@ -297,11 +301,6 @@ section {
   transform: translateX(-50%);
   margin-bottom: 2.5rem;
 }
-
-.sub-heading--light {
-  color: white;
-}
-
 .sub-heading::after {
   content: "";
   position: absolute;
@@ -312,6 +311,9 @@ section {
   width: 50%;
   background: #d4af37;
 }
+.sub-heading--light {
+  color: white;
+}
 
 .btn-accent {
   background: #d4af37;
@@ -321,7 +323,6 @@ section {
   cursor: pointer;
   transition: 300ms;
 }
-
 .btn-accent:hover {
   background: #b29126;
 }
@@ -334,7 +335,6 @@ section {
   cursor: pointer;
   transition: 300ms;
 }
-
 .btn-accent-outline:hover {
   background: #d4af37;
   color: black;

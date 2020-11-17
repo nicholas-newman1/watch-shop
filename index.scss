@@ -4,6 +4,7 @@
 @use './scss/about';
 @use './scss/contact';
 @use './scss/footer';
+@use './scss/mens';
 
 *,
 *::before,
@@ -62,21 +63,21 @@ section {
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 2.5rem;
-}
 
-.sub-heading--light {
-  color: white;
-}
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 50%;
+    background: $accent1;
+  }
 
-.sub-heading::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 5px;
-  width: 50%;
-  background: $accent1;
+  &--light {
+    color: white;
+  }
 }
 
 .btn-accent {
@@ -86,10 +87,10 @@ section {
   padding: 0.75em 1.5em;
   cursor: pointer;
   transition: 300ms;
-}
 
-.btn-accent:hover {
-  background: darken($accent1, 10);
+  &:hover {
+    background: darken($accent1, 10);
+  }
 }
 
 .btn-accent-outline {
@@ -99,9 +100,9 @@ section {
   padding: 0.75em 1.5em;
   cursor: pointer;
   transition: 300ms;
-}
 
-.btn-accent-outline:hover {
-  background: $accent1;
-  color: black;
+  &:hover {
+    background: $accent1;
+    color: black;
+  }
 }
