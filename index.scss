@@ -5,6 +5,7 @@
 @use './scss/contact';
 @use './scss/footer';
 @use './scss/mens';
+@use './scss/listing';
 
 *,
 *::before,
@@ -34,6 +35,10 @@ a {
 
 section {
   padding: 7rem 0;
+}
+
+img {
+  width: 100%;
 }
 
 .container {
