@@ -28,3 +28,10 @@ window.onscroll = () => {
 
 // set margin top of main to the header height
 main.style.marginTop = header.clientHeight + 'px';
+
+// close nav on link click
+nav.addEventListener('click', (e) => {
+  e.target.localName === 'a' &&
+    nav.classList.contains('nav--visible') &&
+    nav.classList.remove('nav--visible');
+});
