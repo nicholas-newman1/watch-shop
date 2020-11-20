@@ -31,12 +31,17 @@
   }
 
   &__item + &__item {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   &__link {
     color: white;
     @include uc();
+    transition: 300ms;
+
+    &:hover {
+      color: $accent1;
+    }
   }
 
   &__bottom-bar {
@@ -52,7 +57,7 @@
     font-size: 0.8rem;
   }
 
-  @include mq(400px) {
+  @include mq(500px) {
     &__list {
       display: flex;
       justify-content: space-between;
@@ -63,7 +68,7 @@
     }
   }
 
-  @include mq(700px) {
+  @include mq(900px) {
     &__container {
       display: flex;
       justify-content: space-between;
@@ -81,7 +86,7 @@
 
 .social {
   display: flex;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   &__link + &__link {
     margin-left: 1rem;
@@ -90,5 +95,10 @@
   &__svg {
     width: 30px;
     fill: white;
+    transition: 300ms;
+
+    &:hover {
+      fill: $accent1;
+    }
   }
 }

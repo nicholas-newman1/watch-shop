@@ -64,7 +64,7 @@
   }
 }
 
-@include mq(700px) {
+@include mq(800px) {
   .nav {
     all: unset;
 
@@ -74,7 +74,7 @@
 
     &__item + &__item {
       margin-top: 0;
-      margin-left: 1rem;
+      margin-left: 2rem;
     }
   }
 

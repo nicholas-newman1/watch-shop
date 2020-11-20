@@ -59,7 +59,7 @@
   fill: #d4af37;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   .nav {
     all: unset;
   }
@@ -68,7 +68,7 @@
   }
   .nav__item + .nav__item {
     margin-top: 0;
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 
   .hamburger {
@@ -184,12 +184,16 @@
   width: 100%;
 }
 .footer__item + .footer__item {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .footer__link {
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: 300ms;
+}
+.footer__link:hover {
+  color: #d4af37;
 }
 .footer__bottom-bar {
   background: #ddd;
@@ -203,7 +207,7 @@
   letter-spacing: 1px;
   font-size: 0.8rem;
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 500px) {
   .footer__list {
     display: flex;
     justify-content: space-between;
@@ -212,7 +216,7 @@
     margin-top: 0;
   }
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   .footer__container {
     display: flex;
     justify-content: space-between;
@@ -227,7 +231,7 @@
 
 .social {
   display: flex;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .social__link + .social__link {
   margin-left: 1rem;
@@ -235,6 +239,10 @@
 .social__svg {
   width: 30px;
   fill: white;
+  transition: 300ms;
+}
+.social__svg:hover {
+  fill: #d4af37;
 }
 
 .shop {
