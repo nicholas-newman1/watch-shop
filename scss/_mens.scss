@@ -1,3 +1,22 @@
-.listing + .listing {
-  margin-top: 2rem;
+@use 'config' as *;
+
+.shop {
+  padding: 2rem 0;
+
+  &__listings {
+    display: grid;
+    gap: 2rem
+  }
+
+  @include mq(600px) {
+    &__listings {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include mq(900px) {
+    &__listings {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
