@@ -82,6 +82,12 @@
 .header-shrink .nav {
   border-bottom: 1px solid;
 }
+.header-shrink .logo {
+  font-size: 1.5rem;
+}
+.header-shrink .hamburger {
+  width: 25px;
+}
 
 .hero {
   background-image: url("./images/hero.jpg");
@@ -156,6 +162,7 @@
 }
 .contact__submit {
   align-self: center;
+  margin-top: 1rem;
 }
 
 .footer {
