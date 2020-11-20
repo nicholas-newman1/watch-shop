@@ -1,6 +1,9 @@
-// hamburger functionality
-const hamburger = document.querySelector('.hamburger');
+const main = document.querySelector('main');
+const header = document.querySelector('header');
 const nav = document.querySelector('.nav');
+const hamburger = document.querySelector('.hamburger');
+
+// hamburger functionality
 hamburger.addEventListener('click', () => {
   nav.classList.contains('nav--visible')
     ? nav.classList.remove('nav--visible')
@@ -8,7 +11,6 @@ hamburger.addEventListener('click', () => {
 });
 
 // header shrink if not scrolled to the top
-const header = document.querySelector('header');
 const checkScroll = () => {
   if (
     document.body.scrollTop > header.clientHeight ||
@@ -25,5 +27,4 @@ window.onscroll = () => {
 };
 
 // set margin top of main to the header height
-const main = document.querySelector('main');
 main.style.marginTop = header.clientHeight + 'px';
