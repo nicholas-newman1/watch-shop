@@ -158,12 +158,11 @@ let listings;
 if (window.location.pathname === '/mens.html') listings = mensListings;
 if (window.location.pathname === '/womens.html') listings = womensListings;
 
-
 // populate shop page
 function createListingHTML(listing) {
   return `<div class="listing" value=${listing.id}>
             <div class="listing__img-container">
-              <a href="./listing.html">
+              <a href="">
                 <img
                   class="listing__img"
                   src=${listing.mainImage.src}
@@ -174,7 +173,7 @@ function createListingHTML(listing) {
 
             <div class="listing__content">
               <h2 class="listing__name">
-                <a class="listing__link" href="./listing.html">
+                <a class="listing__link" href="">
                   ${listing.name}
                 </a>
               </h2>
